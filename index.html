@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Estudiantes</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Estudiantes</h1>
+        <div class="form">
+            <input type="number" id="id" placeholder="ID del Estudiante">
+            <input type="text" id="name" placeholder="Nombre del Estudiante">
+            <input type="text" id="career" placeholder="Carrera">
+            <input type="number" id="grade" placeholder="Calificación">
+            <button id="insert">Insertar</button>
+            <button id="search">Buscar</button>
+            <button id="min">Buscar Valor Mínimo</button>
+            <button id="max">Buscar Valor Máximo</button>
+            <button id="print">Imprimir Todos</button>
+        </div>
+        <div id="results"></div>
+        <table id="studentsTable" border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Carrera</th>
+                    <th>Calificación</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="./src/controllers/script.js" type="module"></script>
+</body>
+</html>
